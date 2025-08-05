@@ -1,0 +1,560 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./imgcomeco/equipamento-ninja-de-tiro-completo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1.5px);
+  background-attachment: fixed;
+  box-shadow: inset 0 0px 70px 50px rgba(0, 0, 0, 0.801);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+header{
+    background: linear-gradient(rgba(25, 0, 255, 0.932),rgb(0, 0, 0));
+    position: relative;
+    min-height: 113px;
+    max-height: 113px;
+    flex:1;   
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.imgs{
+    position: relative;
+}
+
+#yugi{
+    position: absolute;
+    height: 113px;
+    width: 250px;
+    top: 0px;
+    left: 20px;
+    z-index: 1;
+}
+#yugin{
+    position: absolute;
+    height: 113px;
+    width: 185px;
+    top: 0px;
+    left: 100px;
+    z-index: 3;
+    opacity: 0;
+}
+
+#balao{
+   transform: scaleX(-1);
+   width: 290px;
+   height: 100px;
+   position: absolute;
+   left: 280px;
+   top: 0;
+}
+
+#balao2{
+   transform: scaleX(-1);
+   width: 290px;
+   height: 100px;
+   position: absolute;
+   left: 280px;
+   top: 0;
+   opacity: 0;
+}
+
+#duelo{
+    color: black;
+    position: absolute;
+    left: 313px;
+    top: 25px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#codar{
+    color: black;
+    position: absolute;
+    left: 313px;
+    top: 25px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.imgs:hover #codar {
+    opacity: 1;
+}
+
+.imgs:hover #duelo {
+    opacity: 0;
+}
+
+#dg{
+    position: absolute;
+    top: 28px;
+    left: 5px;
+    height: 71px;
+    width: 68px;
+    transform: rotate(-15deg);
+    z-index: 2;
+    transition: opacity 0.6s;
+}
+
+#css{
+    position: absolute;
+    top: 34px;
+    left: 51px;
+    height: 43px;
+    width: 57px;
+    z-index: 1;
+    opacity: 0;
+
+}
+
+#carta{
+    position: absolute;
+    top: 28px;
+    left: 5px;
+    height: 71px;
+    width: 68px;
+    transform: rotate(-15deg);
+    z-index: 2;
+    opacity: 0;
+
+}
+
+#html{
+    position: absolute;
+    top: 40px;
+    left: 11px;
+    height: 40px;
+    width: 57px;
+    transform: rotate(-15deg);
+    z-index: 2;
+    opacity: 0;
+
+}
+
+.imgs:hover #dg {
+    opacity: 0;
+}
+
+.imgs:hover #css,
+.imgs:hover #html,
+.imgs:hover #carta {
+    opacity: 1;
+}
+
+#css, #html, #carta {
+    transition: opacity 0.5s;
+}
+
+#tt{
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  transform: translateX(-50%);
+  color: rgb(255, 238, 5);
+  text-shadow: 0px 10px 8px rgb(0, 0, 0);
+  font-size: 55px;
+  white-space: nowrap;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgba(255, 98, 7, 0.76);
+  font-family: 'Inter', sans-serif;
+  width: 500%;
+  max-width: 730px;
+}
+
+#tp{
+   color: rgb(0, 177, 80);
+   -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(3, 75, 41);;
+   font-size: 70px;
+   width: 900px;
+   height: 112px;
+   position: absolute;
+   left: 1400px;
+   top: 20px;
+   word-wrap: break-word;
+   width: 500px;
+   text-indent: 0.9em;
+   font-family: "Metal Mania", system-ui;
+   line-height: 0.5;
+   max-width: 100%;
+}
+
+#thresh{
+   transform: scaleX(-1);
+   width: 120px;
+   height: 112px;
+   position: absolute;
+   left: 1740px;
+   top: 0;
+   transition: opacity 0.2s;
+}
+
+#serio:hover + #thresh{
+   opacity: 0;
+}
+
+#serio{
+   transform: scaleX(-1);
+   width: 150px;
+   height: 112px;
+   position: absolute;
+   left: 1710px;
+   top: 0;
+   opacity: 0;
+   z-index: 10;
+   transition: opacity 0.2s;
+}
+
+#serio:hover{
+   opacity: 1;
+}
+
+nav{
+    background: linear-gradient(rgb(0, 2, 7),rgb(87, 8, 8));
+    position: relative;
+    
+}
+
+.menu{
+    color: rgb(212, 200, 20);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgba(255, 153, 1, 0.712);
+    
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#comeco{
+    order: 2;
+}
+
+#comeco a[aria-current="page"]{
+  color: rgb(255, 102, 0);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgba(68, 68, 68, 0.795);
+}
+
+#comeco a{
+    color: rgb(252, 206, 4);
+    text-decoration: none;
+}
+
+#comeco a:hover{
+    color: rgb(196, 78, 0);
+}
+
+
+
+.olhogd{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#animes{
+    order: 4;
+}
+
+#animes a{
+    color: rgb(252, 206, 4);
+    text-decoration: none;
+}
+
+#animes a:hover{
+    color: rgb(185, 151, 0);
+}
+
+
+.mjd{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#jogos{
+    order: 6;
+}
+
+#jogos a{
+    color: rgb(252, 206, 4);
+    text-decoration: none;
+}
+
+#jogos a:hover{
+    color: rgb(185, 151, 0);
+}
+
+.sjd{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#olhog{
+   position: absolute;
+   margin-left: -170px;
+   display: flex;
+   order: 1;
+   width: 160px;
+   height: 40px;
+   opacity: 0;
+   transition: opacity 0.9s;
+}
+
+#comeco:hover + #olhog {
+   opacity: 1;
+}
+
+#mj{
+   position: absolute;
+   margin-left: -170px;
+   display: flex;
+   order: 3;
+   width: 160px;
+   height: 40px;
+   opacity: 0;
+   transition: opacity 0.9s;
+}
+
+#animes:hover + #mj{
+   opacity: 1;
+}
+
+#sj{
+   position: absolute;
+   margin-left: -170px;
+   order: 5;
+   width: 160px;
+   height: 34px;
+   opacity: 0;
+   transition: opacity 0.9s;
+}
+
+#jogos:hover + #sj{
+   opacity: 1;
+}
+
+main{
+   flex: 1;
+   width: 100%;
+   max-width: 1300px;
+   padding: 20px;
+   max-height: auto;
+   background-color: rgba(27, 27, 27, 0.970);
+   margin: auto auto;
+   box-shadow: inset 0 0px 70px 50px rgba(0, 0, 0, 0.87);
+}
+
+p{
+    color: white;
+}
+
+.titulo {
+    color: white;
+    font-size: 37px;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#hw{
+    padding-left: 500px;
+    margin-top: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgba(75, 75, 74, 0.788);
+}
+
+
+.texto{
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-indent: 1em;
+    padding-left: 20px;
+   word-wrap: break-word;
+   width: 1260px;
+}
+
+#texto1{
+    margin-top: 100px;
+}
+
+#sb1{
+    color: rgb(45, 178, 211);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgba(5, 111, 153, 0.712);
+    padding-left: 500px;
+    font-size: 37px;
+    margin-top: 50px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#texto2{
+    margin-top: 50px
+}
+
+.contato{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.watts{
+    height: 56px;
+    width: 56px;
+    position: relative;
+}
+
+#watts1, #watts2{
+    width: 56px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+#watts1{
+    z-index: 1;
+}
+
+#watts2{
+    z-index: 2;
+    opacity: 0;
+    transition: 0.1s linear;
+
+}
+
+.watts:hover #watts2{
+    opacity: 1;
+    width: 58px;
+}
+
+.gmail{
+    height: 56px;
+    width: 56px;
+    position: relative;
+}
+
+#gmail1, #gmail2{
+    width: 56px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+
+#gmail1{
+    z-index: 1;
+}
+
+#gmail2{
+    z-index: 2;
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+.gmail:hover #gmail2{
+    opacity: 1;
+    width: 58px;
+}
+
+.github{
+    height: 56px;
+    width: 56px;
+    position: relative;
+}
+
+#gg1, #gg2{
+    width: 55px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#gg1{
+    z-index: 1;
+}
+
+#gg2{
+    z-index: 2;
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+.github:hover #gg2{
+    opacity: 1;
+    width: 58px;
+}
+
+.github:hover #gg1{
+    opacity: 0;
+}
+
+.linkedin{
+    height: 56px;
+    width: 56px;
+    position: relative;
+}
+
+#link1, #link2{
+    width: 55px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+#link1{
+   z-index: 1; 
+}
+
+#link2{
+    z-index: 2;
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+.linkedin:hover #link2{
+    opacity: 1;
+    width: 58px;
+}
+
+footer{
+    background: linear-gradient(rgba(25, 0, 255, 0.932),rgb(0, 0, 0));
+    position: relative;
+    min-height: 70px;
+    max-height: 70px;
+    height: 135px;
+    align-items: center;
+    justify-content: center;
+
+}
